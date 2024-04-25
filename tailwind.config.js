@@ -17,8 +17,8 @@ module.exports = {
     'laptop': '1024px',
   },
   theme: {
-    colors: {},
-    fontFamily: {},
+    // colors: {},
+    // fontFamily: {},
     extend: {
       borderRadius: {
         'default': '8px',

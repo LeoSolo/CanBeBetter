@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
+    "@vue/language-plugin-pug": "^2.0.14",
     "nuxt": "^3.11.2",
     "pinia": "^2.1.7",
     "pug": "^3.0.2",

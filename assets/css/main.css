@@ -7,7 +7,7 @@
 }
 
 html, body {
-    @apply relative w-full h-full ;
+    @apply relative w-full h-full bg-gray-100;
 }
 
 ul {

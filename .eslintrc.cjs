@@ -21,12 +21,12 @@ module.exports = {
         'semi': ['error', 'always'],
         'quotes': ['error', 'single'],
         '@vue/unused-vars': 'off',
+        '@typescript-eslint/no-unused-vars': 'off',
         '@typescript-eslint/semi': 'off',
         'import/no-unresolved': 'off',
         'vue/multi-word-component-names': 'off',
         '@typescript-eslint/no-floating-promises': 'off',
         'import/named': 'off',
-  
         '@typescript-eslint/no-extraneous-class': 'off',
         'comma-dangle': ['error', 'always-multiline'],
         '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
@@ -43,7 +43,6 @@ module.exports = {
         'no-undef': 'off',
         '@typescript-eslint/promise-function-async': 'off',
         '@typescript-eslint/consistent-type-assertions': 'warn',
-  
         'vue/max-attributes-per-line': ['error', {
           'singleline': {
             'max': 3,
@@ -73,7 +72,6 @@ module.exports = {
         'newline-before-return': 'error',
         'no-param-reassign': ['error', { 'props': true }],
         '@typescript-eslint/no-invalid-void-type': 'off',
-        
         '@typescript-eslint/consistent-type-imports': 'off',
         '@typescript-eslint/no-confusing-void-expression': 'off',
     },

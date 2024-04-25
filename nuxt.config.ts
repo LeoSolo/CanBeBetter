@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   vite: {
     plugins: [
       eslintPlugin(),
+      '@vue/language-plugin-pug',
     ],
   },
   devtools: { enabled: true },
