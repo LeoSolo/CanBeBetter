@@ -1,5 +1,5 @@
 # CAN BE BETTER!
-# Nuxt 3 - Vite - Pinia - Pug - Tailwind
+# Nuxt 3 - Vite - Typescript - Pinia - Pug - Tailwind
 
 ## Setup
 npm ci
