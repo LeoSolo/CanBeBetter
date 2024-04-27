@@ -1,19 +1,31 @@
 import { defineStore } from 'pinia';
 
 interface State {
-  isGlobalLoading: Boolean;
+    globalBlocked: Boolean;
+    globalSidebarOpened: Boolean;
 }
 
 export const useGlobalStore = defineStore('globalStore', {
     state: (): State => ({
-        isGlobalLoading: false,
+        globalBlocked: false,
+        globalSidebarOpened: false,
     }),
     actions: {
-        setGlobalLoading(value: boolean) {
-            this.isGlobalLoading = value;
+        setGlobalBlock() {
+            this.globalBlocked = true;
+        },
+        removeGlobalBlock() {
+            this.globalBlocked = false;
+        },
+        openGlobalSidebar() {
+            this.globalSidebarOpened = true;
+        },
+        closeGlobalSidebar() {
+            this.globalSidebarOpened = false;
         },
     },
     getters: {
-        getIsGlobalLoading: (state) => state.isGlobalLoading,
+        isGlobalBlock: (state) => state.globalBlocked,
+        isGlobalSidebarOpened: (state) => state.globalSidebarOpened,
     },
 });

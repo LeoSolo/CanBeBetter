@@ -5,6 +5,7 @@ button.btn.btn-primary(type="submit" class="ml-4 font-bold" @click="goToUsersPag
 
 <script setup lang="ts">
 const router = useRouter();
+const globalStore = useGlobalStore();
 
 const goToUsersPage = () => {
     router.push('/users');

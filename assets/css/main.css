@@ -1,13 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 * {
     @apply box-border;
 }
 
 html, body {
-    @apply relative w-full h-full bg-gray-100;
+    @apply relative w-full h-full;
 }
 
 ul {
