@@ -10,20 +10,16 @@ div(class="auth-container")
         v-model="state.email"
         placeholder="Введите почту" 
         color="primary"
-        variant="outline"
       )
       input(
         v-model="state.password"
         type="password"
         placeholder="Введитк пароль"
         color="primary"
-        variant="outline"
       )
       button(
         type="submit"
         block
-        color="primary"
-        variant="outline"
       ) Авторизоваться
 </template>
 
@@ -54,7 +50,7 @@ const onSubmit = () => {
 
 <style scoped>
   .auth-container {
-    @apply w-[320px] h-fit absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gray-800 p-[14px]
+    @apply w-[380px] h-fit absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gray-800 p-[14px]
      rounded-default border border-gray-700;
   }
 </style>

@@ -1,21 +1,11 @@
 <template lang="pug">
-div(:class="{'hidden': false}" class="container")
-    div(class="container p-4")
-        slot/ 
+div(:class="{'hidden': false}" class="card flex justify-content-center")
+    GlobalSidebar
+    slot/ 
 </template>
 
 <script setup lang="ts">
 // const { isGlobalBlock } = useGlobalStore();
-// const LINKS = [
-//     {
-//         label: 'Главная',
-//         to: '/',
-//     },
-//     {
-//         label: 'Пользователи',
-//         to: '/users',
-//     },
-// ];
 </script>
 
 <style scoped>

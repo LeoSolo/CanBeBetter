@@ -11,6 +11,12 @@ export default defineNuxtConfig({
     'ant-design-vue': 'ant-design-vue/es',
   },
   devtools: { enabled: true },
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false,
+    },
+  ],
   css: [
     '~/assets/css/main.css',
     '~/assets/css/tailwind.css',
@@ -23,8 +29,15 @@ export default defineNuxtConfig({
   },
   modules: [
     '@pinia/nuxt',
+    'nuxt-primevue',
   ],
   pinia: {
     storesDirs: ['./stores/**'],
+  },
+  primevue: {
+    components: {
+        prefix: 'P',
+        include: ['Button', 'Sidebar', 'Dropdown'],
+    },
   },
 });

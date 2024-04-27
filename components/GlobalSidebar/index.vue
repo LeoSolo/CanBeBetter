@@ -1,20 +1,24 @@
 <template lang="pug">
 div
-    UButton(label="OPEN" @click="openSidebar")
+    PButton(label="OPEN THE DOOR" @click="triggerSidebar")
 
-    USlideover(v-model="isGlobalSidebarOpened")
-      div(class="p-4 flex-1")
-        Placeholder(class="h-full") 
+    PSidebar(v-model:visible="isShown" header="Sidebar")
+      p kokoko
 </template>
 
 <script setup lang="ts">
-const { isGlobalSidebarOpened, openGlobalSidebar, closeGlobalSidebar } = useGlobalStore();
+const { openGlobalSidebar, closeGlobalSidebar } = useGlobalStore();
+// let isSidebarOpened = computed(() => useGlobalStore().isGlobalSidebarOpened);
 
-const openSidebar = () => {
-    openGlobalSidebar();
+const isShown = ref(false);
+
+const triggerSidebar = () => {
+    isShown.value = !isShown.value;
+    console.log(isShown.value);
+    
+    // console.log(isSidebarOpened.value);
+    // openGlobalSidebar();
+    // isSidebarOpened.value ? closeGlobalSidebar() : openGlobalSidebar();
 };
 
-const closeSidebar = () => {
-    closeGlobalSidebar();
-};
 </script>
