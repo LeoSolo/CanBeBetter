@@ -1,5 +1,9 @@
 export interface User {
     id: number;
     name: string;
-    birthday: Date;
+    secondName: string;
+    surname: string;
+    phone: string | null;
+    email: string;
+    password: string;
 }
